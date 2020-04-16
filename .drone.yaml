@@ -1,0 +1,12 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: app
+  image: node
+  commands:
+  - cd app
+  - npm install
+  - npm run build
